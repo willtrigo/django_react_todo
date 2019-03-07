@@ -25,7 +25,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 INSTALLED_APPS = [
     'django.contrib.admin', 'django.contrib.auth',
     'django.contrib.contenttypes', 'django.contrib.sessions',
-    'django.contrib.messages', 'django.contrib.staticfiles'
+    'django.contrib.messages', 'django.contrib.staticfiles', 'todo'
 ]
 
 MIDDLEWARE = [
