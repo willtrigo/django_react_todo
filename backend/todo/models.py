@@ -9,6 +9,8 @@ class Todo(models.Model):
     description = models.TextField()
     completed = models.BooleanField(default=False)
 
+    objects = models.Manager()
+
     def __str__(self):
         """Str return title."""
         return self.title
