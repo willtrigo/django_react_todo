@@ -1,0 +1,98 @@
+https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react
+
+$ mkvirtualenv -p /usr/bin/python3.7 django_react_todo
+$ cdvirtualenv
+$ git flow init
+$ touch .gitignore
+$ nano .gitignore
+  file.gitignore.config.txt
+$ git add .
+$ git commit -m "Add .gitignore"
+$ git checkout master
+
+github create the project
+$ git remote add origin https://github.com/willtrigo/django_react_todo.git
+$ git checkout develop
+$ git merge develop
+$ git push -u origin master
+
+$ pip install django
+$ django-admin startproject backend
+$ cd backend
+
+$ code .
+disable extentions
+$ pip install pylint
+
+$ pip install dj-database-url
+$ pip install dj-static
+$ pip install python-decouple
+$ touch .env
+  copy from other .env project
+make change in the setting.py and wsgi.py
+$ git add .
+$ git commit -m "Create backend"
+$ git checkout master
+$ git merge develop
+$ git push -u origin master
+
+$ python manage.py makemigrations todo
+$ python manage.py migrate todo
+add 'todo' in the settings.py
+add infos in models.py
+add infos in admin.py
+$ git add .
+add commits
+$ git checkout master
+$ git merge develop
+$ git push -u origin master
+
+add data
+
+$ pip install djangorestframework
+$ pip install django-cors-headers
+add the params in the settings
+$ git add .
+add commits
+
+$ touch todo/serializers.py
+create the serializer in the serializers.py
+$ git add .
+add commits
+
+add infos in views.py
+add infos in urls.py
+$ git add .
+add commits
+
+create requirements.txt
+add commit
+
+$ git checkout master
+$ git merge develop
+$ python manage.py collectstatic
+$ git push -u origin master
+
+--------------------------------------------
+
+$ npm install -g create-react-app
+$ create-react-app frontend
+$ cd frontend
+$ yarn start
+$ code .
+disable extentions
+$ git add .
+$ git commit -m "Create frontend"
+
+$ yarn add bootstrap reactstrap
+
+add infos in the index.css
+add infos in the index.js
+add infos in the app.js
+
+create modal component
+$ git add .
+add commits
+
+$ yarn add axios
+add the axios for connect backend with frontend in app.js
