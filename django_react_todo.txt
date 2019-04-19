@@ -3,7 +3,7 @@ https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react
 $ mkvirtualenv -p /usr/bin/python3.7 django_react_todo
 $ cdvirtualenv
 $ git flow init
-$ touch .gitignore
+$ :> .gitignore
 $ nano .gitignore
   file.gitignore.config.txt
 $ git add .
@@ -27,7 +27,8 @@ $ pip install pylint
 $ pip install dj-database-url
 $ pip install dj-static
 $ pip install python-decouple
-$ touch .env
+create .env, the example is .env-sample
+$ :> .env
   copy from other .env project
 make change in the setting.py and wsgi.py
 $ git add .
@@ -55,7 +56,7 @@ add the params in the settings
 $ git add .
 add commits
 
-$ touch todo/serializers.py
+$ :> todo/serializers.py
 create the serializer in the serializers.py
 $ git add .
 add commits
